@@ -1,7 +1,7 @@
 // TODO: Crear modelo de datos de Reserva
 const { sequelize, DataTypes } = require('../database');
 
-const Usuario = sequelize.define('Usuario', {
+const Reserva = sequelize.define('Reserva', {
     // Model attributes are defined here
     username: {
         type: DataTypes.STRING,
@@ -46,6 +46,6 @@ const Usuario = sequelize.define('Usuario', {
 });
 
 // Crear tabla si no existe
-Usuario.sync();
+Reserva.sync();
 
-module.exports = Usuario;
+module.exports = Reserva;
